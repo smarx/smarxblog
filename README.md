@@ -1,5 +1,5 @@
-Code Powering [blog.smarx.com](http://blog.smarx.com)
-=====================================================
+Code Powering blog.smarx.com
+============================
 
 This is the code powering my blog ([blog.smarx.com](http://blog.smarx.com)).
 
