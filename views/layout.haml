@@ -1,0 +1,46 @@
+!!! 5
+%html
+  %head
+    %title blog.smarx.com - cloud development blog
+    %link{:href => "/content/stylesheet.css", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "/rss", :title => "blog.smarx.com - RSS", :rel => "alternate", :type => "application/rss+xml"}
+    %link{:href => "/atom", :title => "blog.smarx.com - Atom", :rel => "alternate", :type => "application/atom+xml"}
+    %link{:href => "/metaweblog", :rel => "EditURI", :title => "RSD", :type => "application/rsd+xml"}
+  %body
+    #main
+      .header
+        %h1
+          %a{:href => "http://blog.smarx.com"} blog.smarx.com
+        %h2 Steve Marx's blog about cloud development
+      #sidebar
+        #about
+          %h2.sidebar-title author
+          %img#headshot{:src => "/content/images/headshot.jpg", :alt => "Steve Marx"}
+          Steve Marx works for Microsoft on Windows Azure
+        #contact
+          %h2.sidebar-title contact
+          %ul
+            %li
+              %a{:href => "http://blog.smarx.com"} blog.smarx.com
+            %li
+              %a{:href => "mailto:steve.marx@microsoft.com"} Steve.Marx@microsoft.com
+            %li
+              %a{:href => "http://twitter.com/smarx"} @smarx
+        #twitter_div
+          %h2.sidebar-title tweets
+          %ul#twitter_update_list
+          %a#twitter-link{:href => "http://twitter.com/smarx"} follow smarx
+        #subscribe
+          %h2.sidebar-title subscribe
+          %ul
+            %li
+              %img{:src => "/content/images/feed-icon-14x14.png", :alt => "subscribe"}
+              %a{:href => "/atom"} Atom
+          %ul
+            %li
+              %img{:src => "/content/images/feed-icon-14x14.png", :alt => "subscribe"}
+              %a{:href => "/rss"} RSS
+      #content
+        =yield
+    %script{:type => "text/javascript", :src => "/content/javascript/twsearch.js"}
+    %script{:type => "text/javascript", :src => "http://search.twitter.com/search.json/?rpp=5&callback=twsearch&q=smarx"}

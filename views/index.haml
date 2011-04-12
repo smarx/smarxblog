@@ -1,0 +1,5 @@
+- @entries.each do |entry|
+  =haml :post, :layout => false, :locals => {:entry => entry}
+- unless @entries.continuation_token['NextPartitionKey'].nil? and @entries.continuation_token['NextRowKey'].nil?
+  .pagelink
+    %a{:href => "?#{@entries.continuation_token['NextPartitionKey']}/#{@entries.continuation_token['NextRowKey']}"} Older entries &raquo;

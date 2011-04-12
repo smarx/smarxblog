@@ -1,0 +1,7 @@
+.post
+  %h1.title
+    %a{:href => "/posts/#{entry[:Permalink]}"}= entry[:Title]
+  .body~ entry[:Body]
+  %p.byline
+    %a{:href => "/posts/#{entry[:Permalink]}"}= entry[:Posted].httpdate
+%hr

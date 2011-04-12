@@ -1,0 +1,140 @@
+html, body
+{
+	background-color: white;
+	text-align: center;
+	margin: auto;
+}
+
+a
+{
+	color: maroon;
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: underline;
+}
+
+#main
+{
+	font-family: Georgia;
+	margin: 0px auto;
+	width: 960px;
+	background-color: white;
+	color: #3d3d3d;
+	padding-top: 0px;
+	text-align: left;
+	font-size: 16px;
+	padding-bottom: 30px;
+	background-repeat: no-repeat;
+}
+
+.header
+{
+	background-image: url("/content/images/header.png");
+	height: 214px;
+	text-align: right;
+	font-family: Georgia;
+	text-transform: lowercase;
+}
+
+.header h1
+{
+	margin-bottom: 0px;
+	margin-right: 72px;
+	padding-top: 96px;
+	margin-top: 0px;
+}
+.header h1 a
+{
+	text-decoration: none;
+	color: #3d3d3d;
+}
+.header h1 a:hover
+{
+	text-decoration: underline;
+}
+.header h2
+{
+	font-size: 10pt;
+	margin-top: 0px;
+	margin-right: 72px;
+}
+
+h1.title
+{
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 0px;
+}
+
+h2
+{
+	font-size: 24px;
+	line-height: 24px;
+}
+
+h3
+{
+	font-size: 16px;
+	line-height: 24px;
+}
+
+p.byline
+{
+	color: #868686;
+	margin: 0px;
+	margin-top: 16px;
+	margin-bottom: 12px;
+	padding: 0px;
+	text-transform: uppercase;
+	/*font-variant: small-caps;*/
+	font-size: 12px;
+	text-indent: 0px;
+	font-family: Arial;
+	letter-spacing: 1px;
+}
+
+p.byline a
+{
+	color: #868686;
+	/*text-decoration: underline;*/
+}
+
+hr
+{
+    margin: 16px 16px 16px 16px;
+}
+
+div.comment { border: 1px solid silver; background-color: #f8f8ff; padding: 8px; margin: 8px; clear: both; height: 100%; }
+div.comment div.author { font-size: 16px; line-height: 24px; float: left; margin-right: 8px; }
+div.comment div.timestamp { float: right; }
+div.comment div.body { clear: both; }
+div.comment p { margin: 0; padding: 0; }
+div.comment span.timestamp { font-size: 16px; color: #aaaaaa; }
+
+div.pagelink { padding: 15px; }
+div.pagelink a { float: right; font-size: 12pt; }
+
+div#sidebar { margin-top: 16px; float: right; width:144px; margin-left: 16px; padding: 8px 0px 0px 8px; margin-right: 0px; font-size: 10px; line-height: 12px; font-family: Verdana; }
+div#sidebar h2.sidebar-title { margin-bottom: 8px; margin-top: 0px; font-size: 16px; line-height: 16px; border-bottom: 1px solid #cccccc; color: black; font-weight: normal; text-align: right; }
+div#sidebar ul { list-style: none; margin: 0px; padding: 0px; }
+div#twitter_div li { margin-bottom: 16px; }
+div#sidebar div { clear: both; padding-bottom: 16px; }
+div#sidebar div#twitter_div a#twitter-link { padding-top: 8px; padding-bottom: 8px; float: right; }
+div#sidebar p { margin: 0px; }
+
+div#content { width: 800px; padding-left: 8px; margin-top: 16px; }
+img#headshot { width: 40px; float: left; margin-right: 8px; }
+
+pre
+{
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.post li { font-size: 16px; line-height: 24px; }
+.body p { font-size: 16px; line-height: 24px; margin: 0px; }
+.body p+p { text-indent: 1.5em; margin-top: 8px; }
+.body img { padding: 16px; }
