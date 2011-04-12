@@ -1,5 +1,6 @@
 source "http://rubygems.org"
 gem "sinatra"
+gem "haml"
 gem "sinatra-reloader"
 gem "waz-storage"
 gem "builder"
