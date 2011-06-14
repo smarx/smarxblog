@@ -21,7 +21,7 @@ end
 
 get '/posts/:permalink' do
   entry = WAZ::Tables::Table.service_instance.query('BlogEntryTable', {:expression => "(PartitionKey eq '#{PARTITION}') and (Permalink eq '#{params[:permalink]}')"})[0]
-  haml :post, :locals => {:entry => entry}
+  haml :post, :locals => {:entry => entry, :title => "#{entry[:Title]} - blog.smarx.com"}
 end
 
 def feed(version)

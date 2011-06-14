@@ -1,7 +1,7 @@
 !!! 5
 %html
   %head
-    %title blog.smarx.com - cloud development blog
+    %title= defined?(title) ? title : 'blog.smarx.com - cloud development blog'
     %link{:href => "/content/stylesheet.css", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "/rss", :title => "blog.smarx.com - RSS", :rel => "alternate", :type => "application/rss+xml"}
     %link{:href => "/atom", :title => "blog.smarx.com - Atom", :rel => "alternate", :type => "application/atom+xml"}
