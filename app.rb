@@ -10,9 +10,10 @@ require File.dirname(__FILE__) + '/metaweblog.rb'
 set :public, File.dirname(__FILE__) + '/static'
 
 get '/' do
-  options = {:top => 5, :expression => "(PartitionKey eq '#{PARTITION}') and (not IsDraft)"}
-  if request.query_string.length > 0
-    split = request.query_string.split '/'
+  options = {:top => (params['posts'] || "5").to_i, :expression => "(PartitionKey eq '#{PARTITION}') and (not IsDraft)"}
+  tokens = params.select{|_,v| v.nil?}.each_key.first
+  unless tokens.nil?
+    split = tokens.split '/'
     options.merge!( {:continuation_token => {'NextPartitionKey' => split[0], 'NextRowKey' => split[1]}} )
   end
   @entries = WAZ::Tables::Table.service_instance.query('BlogEntryTable', options)
