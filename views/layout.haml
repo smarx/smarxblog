@@ -23,7 +23,7 @@
             %li
               %a{:href => "http://blog.smarx.com"} blog.smarx.com
             %li
-              %a{:href => "mailto:steve.marx@microsoft.com"} smarx@smarx.com
+              %a{:href => "mailto:smarx@smarx.com"} smarx@smarx.com
             %li
               %a{:href => "http://twitter.com/smarx"} @smarx
         #twitter_div
@@ -43,4 +43,4 @@
       #content
         =yield
     %script{:type => "text/javascript", :src => "/content/javascript/twsearch.js"}
-    %script{:type => "text/javascript", :src => "http://search.twitter.com/search.json/?rpp=5&callback=twsearch&q=smarx"}
+    %script{:type => "text/javascript", :src => "http://search.twitter.com/search.json?rpp=5&callback=twsearch&q=smarx"}
