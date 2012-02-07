@@ -1,7 +1,7 @@
 !!! 5
 %html
   %head
-    %title= defined?(title) ? title : 'blog.smarx.com - cloud development blog'
+    %title= defined?(title) ? title : "Steve Marx's blog"
     %link{:href => "/content/stylesheet.css", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "/rss", :title => "blog.smarx.com - RSS", :rel => "alternate", :type => "application/rss+xml"}
     %link{:href => "/atom", :title => "blog.smarx.com - Atom", :rel => "alternate", :type => "application/atom+xml"}
@@ -10,20 +10,20 @@
     #main
       .header
         %h1
-          %a{:href => "http://blog.smarx.com"} blog.smarx.com
-        %h2 Steve Marx's blog about cloud development
+          %a{:href => "http://blog.smarx.com"} Steve Marx's blog
+        %h2 programming and entrepreneurship
       #sidebar
         #about
           %h2.sidebar-title author
           %img#headshot{:src => "/content/images/headshot.jpg", :alt => "Steve Marx"}
-          Steve Marx works for Microsoft on Windows Azure
+          Steve Marx is a programmer and entrepreneur (who no longer works at Microsoft)
         #contact
           %h2.sidebar-title contact
           %ul
             %li
               %a{:href => "http://blog.smarx.com"} blog.smarx.com
             %li
-              %a{:href => "mailto:steve.marx@microsoft.com"} Steve.Marx@microsoft.com
+              %a{:href => "mailto:steve.marx@microsoft.com"} smarx@smarx.com
             %li
               %a{:href => "http://twitter.com/smarx"} @smarx
         #twitter_div
